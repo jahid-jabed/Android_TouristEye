@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.touristguidebd.CustomContact"
+    android:background="#ffb10e">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:text="DHAKA"
+            android:id="@+id/btn_cc_dhaka"
+            android:layout_marginTop="53dp"
+            android:layout_alignParentTop="true"
+            android:onClick="calldhaka"
+            android:layout_alignLeft="@+id/btn_cc_ctg"
+            android:layout_alignStart="@+id/btn_cc_ctg"
+            android:layout_toLeftOf="@+id/btn_cc_rajshahi"
+            android:layout_toStartOf="@+id/btn_cc_rajshahi" />
+
+        <Button
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:text="RAJSHAHI"
+            android:onClick="callrajshahi"
+            android:id="@+id/btn_cc_rajshahi"
+            android:layout_marginRight="61dp"
+            android:layout_marginEnd="61dp"
+            android:layout_above="@+id/btn_cc_ctg"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:text="CHITTAGONG"
+            android:onClick="callctg"
+            android:id="@+id/btn_cc_ctg"
+            android:layout_below="@+id/btn_cc_dhaka"
+            android:layout_toLeftOf="@+id/btn_cc_rajshahi"
+            android:layout_toStartOf="@+id/btn_cc_rajshahi" />
+
+        <Button
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:text="RANGPUR"
+            android:onClick="callrangpur"
+            android:id="@+id/btn_cc_rangpur"
+            android:layout_below="@+id/btn_cc_rajshahi"
+            android:layout_alignLeft="@+id/btn_cc_rajshahi"
+            android:layout_alignStart="@+id/btn_cc_rajshahi"
+            android:layout_alignRight="@+id/btn_cc_rajshahi"
+            android:layout_alignEnd="@+id/btn_cc_rajshahi" />
+
+        <Button
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:text="MYMENSINGH"
+            android:onClick="callmymen"
+            android:id="@+id/btn_cc_mymen"
+            android:layout_below="@+id/btn_cc_ctg"
+            android:layout_toLeftOf="@+id/btn_cc_sylhet"
+            android:layout_alignLeft="@+id/btn_cc_ctg"
+            android:layout_alignStart="@+id/btn_cc_ctg" />
+
+        <Button
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="SYLHET"
+            android:id="@+id/btn_cc_sylhet"
+            android:onClick="callsylhet"
+            android:layout_alignTop="@+id/btn_cc_mymen"
+            android:layout_alignLeft="@+id/btn_cc_rangpur"
+            android:layout_alignStart="@+id/btn_cc_rangpur"
+            android:layout_alignRight="@+id/btn_cc_rangpur"
+            android:layout_alignEnd="@+id/btn_cc_rangpur" />
+
+        <Button
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="KHULNA"
+            android:id="@+id/btn_cc_khulna"
+            android:layout_below="@+id/btn_cc_mymen"
+            android:layout_alignLeft="@+id/btn_cc_mymen"
+            android:onClick="callkhulna"
+            android:layout_alignStart="@+id/btn_cc_mymen"
+            android:layout_toLeftOf="@+id/btn_cc_barisal"
+            android:layout_toStartOf="@+id/btn_cc_barisal" />
+
+        <Button
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="BARISAL"
+            android:onClick="callbarisal"
+            android:id="@+id/btn_cc_barisal"
+            android:layout_below="@+id/btn_cc_mymen"
+            android:layout_alignRight="@+id/btn_cc_sylhet"
+            android:layout_alignEnd="@+id/btn_cc_sylhet" />
+    </LinearLayout>
+</RelativeLayout>
